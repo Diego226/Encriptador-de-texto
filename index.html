@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+    
+</head>
+<body>
+    <header>
+        <img src="./assets/Logo.png" alt="logo alura">
+        <h1>Encriptador de Texto</h1>
+    </header>
+
+    <main class="contenedor">
+        
+        <section class="panel-1 secciones">
+            
+            <textarea class="textarea" id="textarea" name="textarea"  placeholder="Escribe aquí el texto"></textarea>
+                       
+            <i  class="aviso"><img src="./assets/aviso.png" alt="aviso"> Solo letras en minúsculas y sin acentos</i>                              
+            
+            <div class="botones-encriptar">
+                <button type="submit" onclick="encriptarbtn()" class="btn btn-encriptar">Encriptar</button>
+                <button onclick="limpiarbtn()" class="btn btn-limpiar">Limpiar</button>
+                <button onclick="pegarbtn()" class="btn btn-pegar">Pegar</button>
+                <button type="submit" onclick="desencriptarbtn()" class="btn btn-desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="panel-2 secciones" id="fg">
+            <div id="resultados">               
+                <img class="muneco" src="./assets/Muñeco.png" alt="">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="btn-div-copy">
+                
+                <button onclick="copiarbtn()" class="btn btn-copy">Copiar</button>
+                <div id="avisoss">
+                    
+                </div>
+            </div>
+            
+            
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; Desarrollado por DGM Studio. Todos los derechos reservados</p>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>

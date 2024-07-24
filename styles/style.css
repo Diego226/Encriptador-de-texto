@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --colorFondo: #1F2232;
+    --colorFooter: #464E5D;
+    --color1: #E3BAC6;
+    --texto:#D6DBE4;
+    --Quicksand:"Quicksand", sans-serif;
+    --josefin:"Josefin Sans", sans-serif;
+
+}
+body{
+    background-color: var(--colorFooter);
+    color: var(--texto);
+}
+/*header*/
+header{
+    display: flex;
+    padding:20px;
+    font-family: var(--Quicksand);
+}
+/*main*/
+.contenedor{
+    background-color: var(--colorFondo);
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-around;
+    padding: 1.875rem;
+    gap: 6.25rem;   
+}
+.secciones{
+    display: flex;
+    flex-direction: column;
+    width: 37.5rem;
+    height: 31.25rem;
+    
+}
+
+.botones-encriptar{  
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.textarea{
+    resize: none;
+    opacity: 0.8;
+    max-width: 96%;
+    height: 100%;
+    padding: 2%;
+    color: black;
+    font-family: var(--Quicksand);
+    font-weight: 800;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+.aviso{
+    color: gray;
+    padding: 2%;
+    font-family: var(--josefin);
+}
+.panel-2{
+    width: 25rem;
+    
+}
+#resultados{
+    background-color: white;
+    max-width: 100%;
+    height: 100%;
+    padding: 3%;
+    text-align: center;
+    opacity: 0.8;
+    color: black;
+    font-family: var(--Quicksand);
+    border-radius: 10px;
+}
+
+.btn-div-copy{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    
+}
+.btn{
+    padding: 2%;
+    font-family: var(--Quicksand);
+    font-weight: 800;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: #B9BFCA;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #555555;
+    color: white;   
+}
+.muneco{
+    max-width: 100%;
+}
+footer{
+    text-align: center;
+    padding: 1.5rem;
+    font-family: var(--josefin);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 1000px) {
+    header{
+        padding: 10px;
+    }
+    header h1{
+        font-size: 28px;
+    }
+    .contenedor{
+        flex-wrap: wrap;
+        padding: 0.5rem;   
+    }
+    .secciones{       
+        flex: 1 1 47%; 
+    }
+    .muneco{
+        display: none;
+        
+    }
+}
+#avisoss {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+    font-family: var(--Quicksand);
+    padding: 5px;
+    background-color: #9BD1E5;
+    color: #32495D;
+    border: 1px solid #6DBCD9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000; /* Asegura que el aviso esté por encima de otros elementos */
+}
